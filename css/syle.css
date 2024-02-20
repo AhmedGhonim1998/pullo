@@ -1,0 +1,275 @@
+:root{
+    --heading_color : #0c0116;
+    --pink_color:#ff4e5b;
+    --grey_color:#ededed;
+    --heading_color_2 : #0a0506;
+    --dark_grey: #43413e;
+    --footer_color:#272222;
+}
+body{
+    box-sizing: border-box;
+    height: 5000px;
+}
+/******************************************start global styles*********************************************/
+h1{
+    font-size: 3rem;
+}
+h2{
+    color: var(--pink_color);
+}
+.btn-primary{
+    border-radius: 0%;
+    background-color: var(--pink_color);
+    color: white;
+    transition: .2s;
+    border: none;
+    width: 140px;
+}
+.btn-primary:hover{
+    background-color: white;
+    color: var(--pink_color);
+}
+.btn-secondary{
+    border-radius: 0%;
+    background-color: white;
+    color: var(--pink_color);
+    border: none;
+    transition: .2s;
+    width: 140px;
+}
+.btn-secondary:hover{
+    background-color: var(--pink_color);
+    color: white;
+}
+/*******************************************end global styles*********************************************/
+/*************************************start new running shoes*********************************************/
+.new_running_shoes{
+    background-image: url(../pullo/images/banner.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.zero_rwo{
+    border: 1px solid;
+    border-radius: 100px;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+/*************************************end new running shoes*********************************************/
+/*************************************start new collection*********************************************/
+.collection_card{
+        bottom: 40px;
+        left: 54px;
+        z-index: 10;
+}
+.down_collection_card{
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .2s;
+    cursor: pointer;
+}
+.fa-star{
+    color: orange;
+}
+.collection_card_under{
+    background-color: var(--grey_color);
+}
+.down_collection_card_up::after {
+    content: "new";
+    position: absolute;
+    background-color: var(--heading_color_2);
+    color: white;
+    width: 64px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    z-index: 10;
+    right: 90%;
+    text-transform: capitalize;
+}
+span{
+    color: var(--pink_color);
+    font-weight:700
+}
+.card-text{
+    text-decoration:underline
+}
+.down_collection_col .btn{
+    width: 120px;
+}
+/*************************************end new collection*********************************************/
+/*************************************start racing boots*********************************************/
+.racing_boots_bottom{
+    background-color: var(--grey_color);
+}
+/*************************************end racing boots***********************************************/
+/*************************************start new arrival products *********************************************/
+.down_arrival_products{
+    background-color: var(--pink_color);
+}
+.card-img-top{
+    width: 40%;
+    height: auto;
+}
+.card_fetch{
+    flex-direction: row !important;
+    cursor: pointer;
+    transition: .2s;
+}
+.card:hover{
+    transform: translate(0px, -8px);
+}
+.btn-third{
+    background-color: var(--heading_color_2);
+}
+.card_body_fetch p{
+    color: var(--pink_color);
+    font-weight: 600;
+}
+.spinner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+/*************************************end new arrival products *********************************************/
+/*************************************start contact now *********************************************/
+.inputs_col{
+    background-color: var(--dark_grey);
+}
+.txt_area{
+    height: 150px;
+}
+.form-control{
+    border-radius: 0;
+}
+/*************************************end contact now *********************************************/
+/*************************************start footer *********************************************/
+footer{
+    background-color: var(--footer_color);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.sletter{
+    width: 150px;
+}
+/*************************************end footer *********************************************/
+
+.reserved{
+    background-color: var(--pink_color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************responsive*********************************************/
+@media (max-width:770px) {
+    .nav_bar , .right_nav_bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:990px) {
+    .running_shoes_row img{
+        width: 50%;
+    }
+    .running_shoes_row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left_content_col{
+        width: 100%;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .racing_boots_row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .racing_boots_col:last-child{
+        width: 25%;
+    }
+    .racing_boots_row img{
+        width: 50%;
+    }
+    .secondary_footer_row,.sletter_col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec_footer_col{
+        width: 50%;
+    }
+    .footer_icons{
+        width: 15%;
+    }
+}
+@media (max-width:452px) {
+    .down_collection_col{
+        width: 50%;
+    }
+    
+}
+
+
