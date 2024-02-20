@@ -8,7 +8,6 @@
 }
 body{
     box-sizing: border-box;
-    height: 5000px;
 }
 /******************************************start global styles*********************************************/
 h1{
@@ -263,6 +262,9 @@ a{
     }
     .footer_icons{
         width: 15%;
+    }
+    .lower_contact{
+        width:97%;
     }
 }
 @media (max-width:452px) {
